@@ -1,65 +1,53 @@
-/* Le code CSS spécifique à la page de documentation */
- nav {
-        display: flex;
-        gap: 160px;
-        margin-top: 40px;
-        position: absolute;
-        inset: 0 auto auto 50%;
-        transform: translateX(-50%);
-        border-radius: 20px;
-        background-color: var(--color-white);
-        padding: 12px 180px;
-        z-index: 1;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
         a {
             text-decoration: none;
             font-size: 20px;
-     
-            color: #FF8D8D;
+            color: var(--color-main);
         }
-    }
+    
 
 .title {
-    margin-top: 200px;
+  margin-top: 100px;
   text-align: center;
-  font-size: 48px;
-  color: #f08c8c;
-  margin-bottom: 10px;
+  font-size: 40px;
+  color: var(--color-main)
+ 
 }
 .content {
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 20px;
+  padding: 80px;
 }
 
 .card {
   background-color: #fdeeee;
   border: 1px solid #f4bcbc;
   border-radius: 20px;
-  padding: 40px;
+  padding: 70px;
   max-width: 520px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  margin: 20px;
+  margin: auto;
 }
 
 .personna{
 
-    h2{
-         margin-top: 200px;
-         text-align: center;
-         font-size: 48px;
-         margin-bottom: 10px;
-         color: #FF8D8D;
-    }
+  padding: auto;
+  margin: auto;
+  text-align: center;
 
+  p{
     
+    color: #333;
+  }
 }
 
 .personna-photo{
     display: flex;
     justify-content: center;
+    
 }
 
 .card-fonctionnement{
@@ -68,25 +56,19 @@
   justify-content: center;
   background-color: #fdeeee;
   border: 1px solid #f4bcbc;
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 520px;
+  border-radius: 30px;
+  padding: 100px;
+  max-width: 800px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   margin: auto;
+  
 
 }
 
 
 .services {
-
-  height: 200px;
-
-  h2{
-  color: #ff7f7a;
-  font-size: 36px;
-  margin-bottom: 26px;
+  
   text-align: center;
-  }
 
 }
 
@@ -102,7 +84,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin:auto;
 }
 
 .service-card {
@@ -111,35 +93,31 @@
   border-radius: 20px;
   padding: 48px 32px 32px;
   position: relative;
-
-   h3 {
-  margin-top: 24px;
-  margin-bottom: 12px;
-  color: #ff7f7a;
-  font-size: 18px;
-}
+  text-align: center;
 
  p {
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
 }
 }
 
 .Maquette{
-  height:1000px;
-  margin: auto;
-  align-items: center;
-  padding:  300px;
-
-  h2{
-    
-  color: #ff7f7a;
-  font-size: 36px;
-  margin-bottom: 26px;
+  margin-top: 200px;
+  display: contents;
   text-align: center;
-  
+}
 
 
-  }
-  
+
+.icon{
+  text-align: center;
+  float: left;
+  color: var(--color-main);
+  font-size: 20px;
+ 
+}
+
+
+.prototype{
+  text-align: center;
 }
