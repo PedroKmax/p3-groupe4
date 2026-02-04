@@ -1,8 +1,8 @@
 /* Variables couleurs */
 :root {
-    --color-white: #fff9f9;
-    --color-pink: #f8e5e5;
-    --color-main: #FF8D8D;
+    --color-white: #fef3f3;
+    --color-pink: #fcf2f2;
+    --color-main: #ce9090;
     --colorTest: #b16060;
 }
 
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: var(--color-white);
+    background-color: white;
     color: #280000;
     font-family: sans-serif;
     position: relative;
@@ -32,11 +32,14 @@ section {
 nav {
     display: flex;
     justify-content: center;
-    gap: 80px;
-    padding: 12px;
-    background-color: var(--color-white);
+    gap: 32px;
+    padding: 36px 40px;
+    background-color: #fcf2f2;
     width: 100%;
     box-shadow: 0 4px 15px #00000012;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2rem;
 
     a {
         margin-top: 0;
@@ -55,7 +58,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 52px;
     margin-bottom: 12px;
     font-weight: 500;
 }
@@ -107,7 +110,7 @@ a {
 
 .row {
     flex-direction: row !important;
-    gap: 80px;
+
 }
 
 .spaceBetween {
@@ -136,7 +139,7 @@ img.circleBg {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width: 500px;
+    width: 320px;
     padding: 8px;
     align-items: center;
 }
@@ -188,9 +191,10 @@ img.circleBg {
 
 .imgXL {
     img {
-        width: 180px;
-        height: 250px;
-        border-radius: 20px;
+        width: 16vw;
+        object-fit: cover;
+        height: 20vw;
+        border-radius: 22px;
     }
 }
 

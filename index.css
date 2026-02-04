@@ -5,10 +5,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 1em;        
+    overflow-y: hidden;
+    padding: 4vw;
 
     #heroContent {
-        width: 40%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .galerie {
+                display: flex;
+        width: 50%;
+        justify-content: left;
+        z-index: -1;
+        gap: 4vw;
+        padding-left: 7vw;
     }
 
     .heroGallery {
@@ -38,7 +53,11 @@ header {
 }
 
 #partners {
-    padding: 40px;
+    padding: 64px;
+            line-height: 1;
+    .container {
+        gap: 80px;
+    }
 }
 
 #engagements {
