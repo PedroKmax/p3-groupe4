@@ -1,6 +1,7 @@
 /* Variables couleurs */
 :root {
     --color-white: #fff9f9;
+    --color-pink: #f8e5e5;
     --color-main: #FF8D8D;
     --colorTest: #b16060;
 }
@@ -12,64 +13,84 @@
 }
 
 /* style global */
-html{
+html {
     font-size: 16px;
 }
+
 body {
     background-color: var(--color-white);
     color: #280000;
     font-family: sans-serif;
     position: relative;
 }
-nav{
-             display: flex;
-        gap: 64px;
-        position: absolute;
-        padding: 24px;
-        inset: 0 0 auto auto;
-        background-color: var(--color-white);
-        width: 100vw;
-        z-index: 1;
-        box-shadow: 0 4px 15px #00000012;
 
+section {
+    padding: 120px 24px;
+    position: relative;
 }
 
-h1,h2{
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 12px;
+    background-color: var(--color-white);
+    width: 100%;
+    box-shadow: 0 4px 15px #00000012;
+
+    a {
+        margin-top: 0;
+    }
+}
+
+h1,
+h2 {
     font-family: "Yrsa", serif;
+    color: var(--color-main);
 }
+
 h1 {
     font-size: 48px;
     margin-bottom: 16px;
-    color: var(--color-main);
 }
 
 h2 {
     font-size: 40px;
     margin-bottom: 12px;
-    color: var(--color-main);
-    color: var(--colorTest);
-        font-weight: 500;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 8px;
     color: var(--color-main);
-    color: var(--colorTest)
-    ;
-        font-weight: 400;
+    font-weight: 400;
 }
 
-.mt-64px{
+.mt-64px {
     margin-top: 64px !important;
 }
+
 a {
     display: inline-block;
+    margin-top: 24px;
+    text-decoration: none;
+    color: var(--color-main);
 }
-.bg-rose{
-    background-color: #f8e5e5;
+
+.bg-lightPink {
+    background-color: var(--color-pink);
 }
-/* container */
+
+.bg-pink {
+    background-color: var(--color-main);
+
+    h2 {
+        color: var(--color-white);
+    }
+}
+
+/* container & heritage */
 .container {
     margin: auto;
     max-width: 1200px;
@@ -79,24 +100,21 @@ a {
     align-items: center;
     text-align: center;
 }
-.row{
-    flex-direction: row;
-}
-
 
 .container.small {
     max-width: 800px;
 }
 
-.container.flex {
-    display: flex;
+.row {
+    flex-direction: row !important;
     gap: 80px;
 }
 
-section{
-    padding: 120px 24px;
-    position: relative;
+.spaceBetween {
+    justify-content: space-between;
 }
+
+
 img.circleBg {
     position: absolute;
     z-index: -1;
@@ -105,39 +123,89 @@ img.circleBg {
     transform: translateY(-50%);
     opacity: .3;
 }
-.cardContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;    
-    justify-content: center;
-}
-/* block with same width */
-.leftBlock,
-.rightBlock {
-    flex: 1;
-}
 
 /* card */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
 
 .card {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width: 300px;
+    width: 500px;
     padding: 8px;
     align-items: center;
-
 }
-.cardImg{
 
+.cardImg {
     margin-bottom: 12px;
     width: 66%;
 }
+
 /* class */
-.d-none {
-    display: none;
+.align-normal {
+    align-items: normal;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.btn1 {
+    border-radius: 20px;
+    padding: 16px 40px;
+    text-decoration: none;
+    background-color: var(--color-main);
+    color: var(--color-white);
+}
+
+.btn2 {
+    border: var(--color-main) 2px solid;
+    border-radius: 20px;
+    padding: 16px 40px;
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-main);
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.imgXY {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.imgXL {
+    img {
+        width: 180px;
+        height: 250px;
+    }
+}
+
+/* footer */
+footer {
+    padding: 24px;
+
+    .socialMediaLogo {
+        display: flex;
+        gap: 12px;
+    }
+
+    .copyright {
+        border-top: 1px solid black;
+        padding: 12px;
+    }
+}
 
 /* class animation */
 @keyframes spin {
@@ -147,20 +215,5 @@ img.circleBg {
 
     to {
         translate: 0 -100%;
-    }
-}
-
-
-
-/* engagement */
-#engagements{
-    .cardContainer{
-        flex-direction: column;
-        .card{
-            flex-direction: row;
-            width: 100%;
-            text-align: left;
-            gap: 32px;
-        }
     }
 }
